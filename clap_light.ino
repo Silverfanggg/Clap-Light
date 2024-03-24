@@ -36,7 +36,7 @@ clap++;
 }
 if (millis()-first_voice >= 400)
 {
-if (clap == 2)
+if (clap == 1)
 {
 
 
@@ -46,7 +46,7 @@ if (clap == 2)
 
 }
 clap = 0;
-if (counter>=4)
+if (counter>=2)
  {
   counter=0;
   }
@@ -61,25 +61,13 @@ switch(counter)
       
       case 1:
       digitalWrite(red,1);
-      digitalWrite(green,0);
-      digitalWrite(blue,0);
+      digitalWrite(green,1);
+      digitalWrite(blue,1);
      
       break;
 
 
-      case 2:
-       digitalWrite(red,1);
-       digitalWrite(green,1);
-       digitalWrite(blue,0);
       
-       break;
-      
-      case 3:
-      digitalWrite(red,1);
-      digitalWrite(green,1);
-      digitalWrite(blue,1);
-      
-      break;
       
     
       default:
